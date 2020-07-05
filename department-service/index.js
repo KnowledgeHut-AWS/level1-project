@@ -7,32 +7,28 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get("/office", (req, res) => {
+app.get("/department", (req, res) => {
     res.json([
         {
             "id": "1",
-            "country": "Kenya",
-            "city": "Nairobi"
+            "name": "CISO"
         },
         {
             "id": "2",
-            "country": "Saudi Arabia",
-            "city": "Riyadh"
+            "name": "Lending"
         },
         {
             "id": "3",
-            "country": "Netherlands",
-            "city": "Amsterdam"
+            "name": "Online Banking"
         },
         {
             "id": "4",
-            "country": "USA",
-            "city": "New York"
+            "name": "Investment Banking"
         }
     ]);
 });
 
 app.listen(80, () => {
-    console.log("Offices service running on port 80");
+    console.log("Departments service running on port 80");
 });
 

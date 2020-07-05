@@ -2,8 +2,8 @@
 
 Designed to run in a node:lts-alpine3.10 container
 
-Exposes an http service endpoint on port 80 with the /departments/ context path
+Exposes an http service endpoint on port 80 with the /office/ context path
 
 eg:
 
-http://{host}/departments/
+http://{host}/office/
